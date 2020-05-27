@@ -138,6 +138,7 @@ let questions = [
 
 const correctBonus = 10;
 const maxQuestions = 10;
+const incorrectPenalty = -10;
 
 startGame = () => {
     questionCounter = 0;
@@ -189,7 +190,10 @@ choices.forEach(choice => {
         
         if(classToApply === 'correct') {
             incrementScore(correctBonus);
+        }else {
+            decreaseTimer(incorrectPenalty);
         }
+        
 
         selectedChoice.parentElement.classList.add(classToApply);
         
@@ -207,6 +211,11 @@ choices.forEach(choice => {
 incrementScore = num => {
     score +=num;
     scoreText.innerText = score;
+}
+
+decreaseTimer = num => {
+    timer -= 10;
+    timer.innerText = timer;
 }
 
 startGame(); 

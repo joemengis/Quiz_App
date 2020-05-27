@@ -1,4 +1,4 @@
-var timer = 10;
+var timer = 180;
 
     setInterval(function() {
         timer -= 1;
