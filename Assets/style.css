@@ -50,7 +50,7 @@ h3 {
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
-    padding-bottom: 30%;
+    /* padding-bottom: 30%; */
 }
 
 .container > * {
