@@ -45,6 +45,18 @@ h3 {
 
 .container {
     width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-bottom: 30%;
+}
+
+#game-container {
+    width: 100vw;
     /* height: 100vw; */
     display: flex;
     justify-content: center;
@@ -52,7 +64,6 @@ h3 {
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
-    /* padding-bottom: 30%; */
 }
 
 .container > * {
