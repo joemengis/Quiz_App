@@ -4,12 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quick Quiz - Play</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./game.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./game.css" />
 </head>
 <body>
     <div class="container">
+        
         <div id="game" class="justify-center felex-column">
+            <div id="hud">
+                 <div id="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                        Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+
+                    </div>
+                        
+                    
+                </div>
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Game Timer
+                    </p>
+                    <h1 class="hud-main-text" id="timer">
+                    </h1>
+                </div>
+            </div>
             <h2 id="question">What is the answer to this question?</h2>
             <div class="choice-container">
                 <p class="choice-prefix">A</p>
@@ -30,5 +59,6 @@
         </div>
     </div>
     <script src="./game.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
